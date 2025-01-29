@@ -37,9 +37,10 @@ jobs:
           distribution: 'temurin'
           java-version: '23'
           cache: gradle
-
-      - name: Run tests
-        run: ./gradlew test
+      - name: Make gradlew executable
+        run: chmod +x ./gradlew
+      - name: Build with Gradle
+        run: ./gradlew clean build
 
   #  package:
   #    runs-on: ubuntu-latest
