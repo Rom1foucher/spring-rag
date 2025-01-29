@@ -60,7 +60,7 @@ jobs:
   #        run: ./gradlew jar
   docker:
     runs-on: ubuntu-latest
-#    needs: test
+    needs: test
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
