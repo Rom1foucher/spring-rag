@@ -87,7 +87,7 @@ jobs:
           context: .
           file: Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/spring-rag:latest
+          tags: ${{ secrets.DOCKER_LOGIN }}/spring-rag:latest
 
   kubernetes:
     runs-on: ubuntu-latest
